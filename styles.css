@@ -1,0 +1,74 @@
+:root {
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(0, 0, 0);
+    --bg-color: rgb(240, 240, 240);
+    --font-color: rgb(0, 0, 0);
+    --heading-color: rgb(0, 0, 139);
+}
+/* default theme  */
+[data-theme="dark"] {
+    --primary-color: rgb(0, 0, 0);
+    --secondary-color: rgb(255, 255, 255);
+    --bg-color: rgb(20, 20, 20);
+    --font-color: rgb(255, 255, 255);
+    --heading-color: rgb(173, 216, 230);
+}
+/*  dark theme */
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: Arial, sans-serif;
+}
+/*  header */
+header {
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+    padding: 1rem;
+    text-align: center;
+}
+/*  nav */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+/*  buttons */
+button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--heading-color);
+}
+
+#date-time {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#todo-list li {
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--secondary-color);
+}
