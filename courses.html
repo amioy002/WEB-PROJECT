@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Courses</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="todo.html">To-Do List</a></li>
+            </ul>
+        </nav>
+        <button onclick="toggleTheme()">Toggle Theme</button>
+        <div id="date-time"></div>
+        <form id="name-form" action="courses.html" method="GET">
+            <input type="text" name="user_name" placeholder="Enter your name">
+            <button type="submit">Submit</button>
+        </form>
+    </header>
+    <main>
+        <section>
+            <h2>Course List</h2>
+            <ul>
+                <li>INFT 1016 - Introduction to Programming</li>
+                <li>MATH 1010 - Calculus I</li>
+                <li>ENG 1001 - Engineering Fundamentals</li>
+                <!-- Add more courses as needed -->
+            </ul>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
