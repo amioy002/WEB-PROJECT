@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="greeting">Hello, Visitor</h1>
+        <nav>
+            <ul> 
+                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="todo.html">To-Do List</a></li>
+            </ul>
+        </nav>
+        <button onclick="toggleTheme()">Toggle Theme</button>
+        <div id="date-time"></div>
+        <form id="name-form" action="index.html" method="GET">
+            <input type="text" name="user_name" placeholder="Enter your name">
+            <button type="submit">Submit</button>
+        </form>
+    </header>
+    <main>
+        <section>
+            <h2>My First Year at University</h2>
+            <p>This is a brief description of my first year at university...</p>
+        </section>
+        <section>
+            <img id="main-image" src="images/image1.jpg" alt="First Year Image">
+            <p id="image-info">Image description here...</p>
+            <button onclick="changeImage('images/image1.jpg', 'First Year Image')">First Year</button>
+            <button onclick="changeImage('images/image2.jpg', 'Second Year Image')">Second Year</button>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
